@@ -1,1 +1,0 @@
-get data from https://fraunhofercl-my.sharepoint.com/:f:/g/personal/apv_fraunhofer_cl/EkTEpizqANNMtVJE_rGtzGIBw_0C7W6eSCReLsopab3ifw?e=iw3qSR
