@@ -29,6 +29,7 @@ Content:
   - LCOE simulation
     
 4. Multi Criteria Deciscion Making
+
 The Multi-Criteria Decision-Making (MCDM) method is used in the present study to evaluate and prioritize potential areas for feasibility. Criteria like solar radiation levels, land suitability, infrastructure proximity, environmental impact, regulations, and economic factors. Each criterion is then weighted based on its importance.
 
 With the criteria in place, potential sites are identified and scored. Techniques like Analytic Hierarchy Process (AHP) or Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) are used to calculate aggregate scores. The sites are ranked based on these scores to identify the most suitable areas for agrivoltaic development. MCDM provides a transparent and objective way to determine the feasibility of potential agrivoltaic sites, allowing for a balanced approach that considers multiple factors in the decision-making process. Respective method is a common approach applied in geospatial AV potential studies. 
