@@ -18,18 +18,21 @@ Content:
 
 -----
 1. Create Working Geodataframe
+
+  
 2. Get Climate data (TMYs)
 
+TMYs are downloaded from PVGIS based on coordinates and saved locally as csv-files. Before starting the dowload, existing files are checked with the working gdf: not matching csv-files are deleted and missing TMY data is dowloaded. Information from the TMYs such as GHI (kWh/a) altitude (m) and information on the download ("ok", "missing climate data", "missing solar data") is saved in the working gdf.
 
 3. Technical and Economic modelling
-3.1. Set Parameters of AV Systems
+- Set Parameters of AV Systems
 
 Common parameters: "length_module", "width_module", "cap_module"
 
 Individual parameters for each AV system: "tracking", "pvrow_azimuth", "pvrow_tilt", "pvrow_distance","pvrow_width", "pvrow_height", "bifaciality", "capex", "opex"
 
 
-3.2. Shadow Simulation with optional optimization of row distance (bifacialvf)
+- Shadow Simulation with optional optimization of row distance (bifacialvf)
 
 Based on NRELs bifacial viewfactors libary (https://github.com/NREL/bifacialvf), the *simulate* function is modified to only perform actions that are needed to calculate irradiation on the ground (and not on the PV modules). Input variables for AV geometries have to be normalized by the pv module width (=1). The irradiation on the ground is computed for 100 points between two rows of PV modules. The irradiation values are further processed to effective PAR:
 ![image](https://github.com/user-attachments/assets/a55234b5-6da8-4028-8cc2-11058de8f3e9)
