@@ -38,7 +38,7 @@ Individual parameters for each AV system: "tracking", "pvrow_azimuth", "pvrow_ti
 Based on NRELs bifacial viewfactors libary (https://github.com/NREL/bifacialvf), the *simulate* function is modified to only perform actions that are needed to calculate irradiation on the ground (and not on the PV modules). Input variables for AV geometries have to be normalized by the pv module width (=1). The irradiation on the ground is computed for 100 points between two rows of PV modules. The irradiation values are further processed to effective PAR:
 ![image](https://github.com/user-attachments/assets/a55234b5-6da8-4028-8cc2-11058de8f3e9)
 
-Optional optimization of the pv row pitch based on average DLI target value is possible (with sipy.minimize_scalar).
+There is the possibility of applying a custom CRS to calculate the diffuse rate from the circumsolar region (instead of using the Perez model for computation). It's a bit faster, and the Perez computation, which takes DNI and DHI as inputs, results in a GHI that is not equal to the GHI in the TMY data. Optional optimization of the pv row pitch based on average DLI target value is possible (with sipy.minimize_scalar).
 
   - PV yield simulation (pvlib)
 
