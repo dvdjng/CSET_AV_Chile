@@ -67,3 +67,4 @@ Potential improvements:
 - Parallelization of for-loops in technical-economic computations (shadow simulation, PV yield, evapotranspiration, LCOE).
 - Use NREL's bifacial viewfactors instead of pvfactors_timeseries for PV yield computation.
 - Make use of light homogeneity index in optimization.
+- Agregar filtros de area (clase de uso de suelo, cercania a la red electrica..)
